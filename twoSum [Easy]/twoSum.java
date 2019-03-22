@@ -15,6 +15,6 @@ public class twoSum {
 
       int[] array = {1, 4, 45, 6, 10, -8};
       int n = 16;
-      System.out.println(Arrays.toString(twoSum(array, n)));
+      System.out.println(Arrays.toString(twoSumBruteForce(array, n)));
   }
 }
