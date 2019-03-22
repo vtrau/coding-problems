@@ -12,7 +12,7 @@ public class twoSum {
     throw new IllegalArgumentException("No two sum solution");
   }
   public static void main(String[] args) {
-      
+
       int[] array = {1, 4, 45, 6, 10, -8};
       int n = 16;
       System.out.println(Arrays.toString(twoSum(array, n)));
