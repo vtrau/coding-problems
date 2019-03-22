@@ -12,10 +12,10 @@ public class twoSum {
     throw new IllegalArgumentException("No two sum solution");
   }
   public static void main(String[] args) {
-
-
+      // Prints "Hello, World" to the terminal window.
+      System.out.println("Hello, World");
       int[] array = {1, 4, 45, 6, 10, -8};
       int n = 16;
-      System.out.println(Arrays.toString(twoSumBruteForce(array, n)));
+      System.out.println(Arrays.toString(twoSum(array, n)));
   }
 }
