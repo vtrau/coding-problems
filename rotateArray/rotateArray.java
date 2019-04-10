@@ -4,6 +4,9 @@ public class rotateArray{
 		int length = array.length;
 		int[] rightArr = new int[rotateBy];
 		int[] leftArr = new int[length - rotateBy];
+		if (rotateBy > length) {
+			rotateBy = rotateBy$4;
+		}
 		for (int i=0;i < leftArr.length;i++) {
 			leftArr[i] = array[i];
 		}
