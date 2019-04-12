@@ -2,8 +2,8 @@ import java.util.Arrays;
 public class firstMissingPositive {
   public static int findPositive(int[] array) {
     //let m = highest number in array
-    //time complexity = O(m+n+n) ~ O(m+n), contains 3 loops
-    //space complexity = O(m) extra space
+    //time complexity = O(m+n+n) ~ O(n), contains 3 loops
+    //space complexity = O(m) extra space, m is the max of array
 
     int max = 0;
     for (int i = 0; i < array.length; i++) {
