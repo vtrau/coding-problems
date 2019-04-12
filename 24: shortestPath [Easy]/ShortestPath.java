@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Queue;
 
 class Coord {
   public int x;
@@ -21,24 +22,19 @@ public class ShortestPath {
     int rLength = board[0].length;
     int cLength = board.length;
     boolean[][] visited = board;
-    LinkedList<Coord> routes = new LinkedList<Coord>();
-
-
-
+    Queue<Coord> routes = new LinkedList<Coord>();
 
 
       routes.offer(start);
       visited[start.y][start.x] = true;
       while (!routes.isEmpty()) {
 
-        Coord path = routes.pollFirst();
+        Coord path = routes.poll();
 
         if (path.x == end.x && path.y == end.y) {
 
           return path.steps;
         }
-
-
 
         if (path.y - 1 >= 0 && !board[path.y-1][path.x] && !visited[path.y-1][path.x]) {
 
@@ -72,13 +68,7 @@ public class ShortestPath {
         }
       }
 
-
-
         return null;
-
-
-
-
 
 
   }
@@ -91,8 +81,6 @@ public class ShortestPath {
     int step = 0;
     Coord start = new Coord(0,0,step);
     Coord end = new Coord(3,0,step);
-
-
 
     System.out.println(shortestPath(board, start, end, 0));
   }
