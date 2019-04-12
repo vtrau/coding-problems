@@ -1,12 +1,13 @@
 import java.util.Arrays;
-public class rotateArray{
+public class RotateArray{
 	public static int[] rotate(int[] array, int rotateBy) {
 		int length = array.length;
+		if (rotateBy > length) {
+			rotateBy = rotateBy%4;
+		}
 		int[] rightArr = new int[rotateBy];
 		int[] leftArr = new int[length - rotateBy];
-		if (rotateBy > length) {
-			rotateBy = rotateBy$4;
-		}
+
 		for (int i=0;i < leftArr.length;i++) {
 			leftArr[i] = array[i];
 		}

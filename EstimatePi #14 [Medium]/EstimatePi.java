@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class estimatePi {
+public class EstimatePi {
 	public static double graph(int randomPoints) {
 		int insideCircle=0;
 		Random random = new Random();
@@ -17,6 +17,6 @@ public class estimatePi {
 		return estPi;
 	}
 	public static void main(String[] args) {
-		System.out.println(graph(1000));	
+		System.out.println(graph(1000));
 	}
 }

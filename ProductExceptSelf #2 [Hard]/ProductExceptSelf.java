@@ -1,5 +1,5 @@
 import java.util.Arrays;
-public class productExceptSelf {
+public class ProductExceptSelf {
 
   public static int[] productWithDivision(int[] array) {
     int[] arr = new int[array.length];

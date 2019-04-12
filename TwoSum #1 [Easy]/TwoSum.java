@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.HashSet;
-public class twoSum {
+public class TwoSum {
 
   //Contains nested double loop, O(n^2) time complexity
   //Only checking if array elements are equal, O(1) space complexity
@@ -51,7 +51,7 @@ public class twoSum {
   //Contains 1 loop, O(n) time complexity
   //HashMap contains n values, O(n) space complexity
   public boolean twoSumBest(int[] array, int target) {
-    HashSet<Integer> set = new HashSet(array.length);
+    HashSet<Integer> set = new HashSet<Integer>(array.length);
     for (int i = 0; i < array.length; i++) {
         int diff = target - array[i];
         if (set.contains(diff)) {

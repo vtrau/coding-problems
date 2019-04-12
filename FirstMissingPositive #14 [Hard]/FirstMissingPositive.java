@@ -1,5 +1,5 @@
 import java.util.Arrays;
-public class firstMissingPositive {
+public class FirstMissingPositive {
   public static int findPositive(int[] array) {
     //let m = highest number in array
     //time complexity = O(m+n+n) ~ O(n), contains 3 loops

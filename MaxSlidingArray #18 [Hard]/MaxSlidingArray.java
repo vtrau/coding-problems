@@ -39,6 +39,6 @@ public class MaxSlidingArray {
     int[] array2 = {1,2,3,4,5,6};
     int[] array3 = {0,1};
     int k = 3;
-    max(array3,3);
+    max(array1,3);
   }
 }
