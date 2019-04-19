@@ -14,16 +14,17 @@ public class TwoSum {
     return false;
   }
 
-  //Contains Arrays.sort(tim sort) and 2 loops, nlogn + 2n = O(nlogn) time complexity
-  //tim sort worse case needs n space to sort array, O(n) space complexity
+
   public static boolean twoSumBetter(int[] arr1, int target) {
-    //arr1          {1,4,45,6,10,-8}
-    //sorted arr1   {-8,1,4,6,10,45}
-    //arr2          {24,15,12,10,6,-29}
+
+    ///Contains Arrays.sort(tim sort) and 2 loops, nlogn + 2n = O(nlogn) time complexity
+    //tim sort worse case needs n space to sort array + another array, O(2n)~O(n) space complexity
     Arrays.sort(arr1);
+
+    //create a new array
     int[] arr2 = new int[arr1.length];
     for (int i = 0; i < arr1.length; i++) {
-      arr2[i] = 16 - arr1[i];
+      arr2[i] = target - arr1[i];
     }
     int length = arr1.length;
     int a = 0;
